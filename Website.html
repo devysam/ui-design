@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI DESIGN SYSTEM PRO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Besley:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
+  <script defer rel="noreferrer" src="https://use.fontawesome.com/b346eea42e.js"></script>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Besley', serif;
+    }
+    .container{
+      height: 100vh;
+    }
+    .contain{
+      height: 67vh;
+      background-image: url(../payments/116-1165388_small.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .navbar{
+      width: 80vw;
+      height: 8vh;
+      background: #bdc3c7;
+      position: relative;
+      left: 10%;
+      top: 5%;
+      border-radius: 70px;
+    }
+    #soft-pro{
+      text-decoration: none;
+      position: relative;
+      left: 32px;
+      top: 12px;
+      color: #6F1E51;
+      font-size: small;
+    }
+    .list-items{
+      list-style-type: none;
+      margin-left: 30%;
+      width: 450px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .list-items li{
+      display: inline-flex;
+      flex-wrap: wrap;
+      position: relative;
+      bottom: 14px;
+      font-size: medium;
+      color: #6F1E51;
+      cursor: pointer;
+      padding: 0 5px;
+    }
+    .list-items li i{
+      margin: 6px;
+    }
+    .buy-now{
+      width: 12%;
+      border: none;
+      outline: none;
+      position: absolute;
+      left: 87%;
+      bottom: 20%;
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: small;
+      color: #fff;
+      background: linear-gradient(to right,#F5B542,#C43423,#9E6912);
+    }
+    .primary{
+      text-align: center;
+      color: #fff;
+      margin-top: 75px;
+      word-spacing: 3px;
+    }
+    .primary h1{
+      font-size: 42px;
+    }
+    .secondary{
+      width: 60%;
+      height: 37vh;
+      margin: 16px 20%;
+      border-radius: 15px;
+      background: linear-gradient(#FFCDF7,#fff);
+      box-shadow: 1px 1px 5px #FFCDF7;
+    }
+    .list-box1{
+      height: 45%;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .list-box1 li{
+      width: 30%;
+      text-align: center;
+      font-size: 40px;
+      padding: 0 9px;
+      color: #C43423;
+    }
+    .list-box1 li i{
+      font-size: 30px;
+      position: relative;
+      left: 4px;
+      bottom: 3px;
+      color: chocolate;
+    }
+    .list-box2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style-type: none;
+      font-size: large;
+      font-weight: bold;
+    }
+    .list-box2 li{
+      width: 30%;
+      text-align: center;
+    }
+    .list-box3{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 16vh;
+      list-style-type: none;
+    }
+    .list-box3 li p{
+      width: 210px;
+      font-size: 15px;
+      color: #9E6912;
+      position: relative;
+      left: 9%; 
+      top: 3%;
+    }
+    .Bootstrap{
+      display: flex;
+      flex-wrap: wrap;
+      width: 530px;
+      height: 80vh;
+      justify-content: space-between;
+      margin: 12% 16%;
+      padding-top: 5%;
+    }
+    .Bootstrap-1 p{
+      width: 190px;
+    }
+    .Bootstrap-2 p{
+      width: 240px;
+    }
+    .Bootstrap-3 p{
+      width: 210px;
+    }
+    .Bootstrap-4{
+      margin-right: 5%;
+    }
+    .Bootstrap-4 p{
+      width: 210px;
+    }
+    .Bootstrap-3,.Bootstrap-4{
+      margin-top: 22%;
+    }
+    .animated-box{
+      width: 27%;
+      height: 68%;
+      position: absolute;
+      top: 102%;
+      left: 65%;
+      border-radius: 15px;
+      background-image: url(../payments/office-work.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 85%;
+    }
+    .card{
+      width: 100%;
+      height: 28rem;
+      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+      position: relative;
+      background: rgba(544, 133, 0,.4);
+      overflow: hidden;
+      border-radius: 15px
+    }
+    .card:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+      filter: blur(10px);
+      margin: -20px;
+      z-index: -1;
+    }
+    .animated-box i{
+      position: absolute;
+      top: 22%;
+      left: 42%;
+      font-size: xx-large;
+      color: #272166;
+    }
+    .animated-box h2{
+      width: fit-content;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 170px;
+      position: relative;
+      top: 44%;
+      left: 26%;
+      color: #f2f2f2;
+      text-shadow: 2px 2px 2px #726552;
+    }
+    .animated-box button{
+      border: 1px solid #fff;
+      border-radius: 25px;
+      padding: 2% 9%;
+      font-size: 10px;
+      position: relative;
+      top: 55%;
+      left: 24%;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(to right,#726552,#CAA988);
+    }
+    .animated-box button:hover{
+      background: linear-gradient(to right,#5d5243,#d19e6c);
+    }
+    .complex{
+      width: 81%;
+      height: 50%;
+      position: absolute;
+      top: 183%;
+      left: 11%;
+      border-radius: 15px;
+      background-image: url(../payments/laptop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #complex-inner{
+      height: 100%;
+      padding-left: 7%;
+      background: rgba(544, 133, 500,.4);
+      text-shadow: 2px 2px 2px black;
+    }
+    .complex h3{
+      color: #fff;
+    }
+    .complex h1{
+      display: grid;
+      grid-template-columns: 289px;
+      width: fit-content;
+      font-size: 37px;
+      color: #fff;
+    }
+    .complex p{
+      display: grid;
+      grid-template-columns: 520px;
+      font-size: larger;
+      color: #dfe4ea;
+      text-shadow: -1px -1px 1px black;
+    }
+    .complex a{
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      top: 12px;
+    }
+    .complex #arrow{
+      margin-left: 1%;
+      animation: myarrow 3s ease infinite;
+    }
+    @keyframes myarrow {
+      from {margin-left: 1%;}
+      to {margin-left: 2%;}
+    }
+    .complex-primary{
+      width: 28%;
+      height: 50%;
+      border-radius: 15px;
+      margin: 32% 11%;
+      background: linear-gradient(#F5B542,#C43423 100%);
+    }
+    #complex-outer{
+      width: fit-content;
+      height: 40%;
+      position: absolute;
+      left: 21%;
+      top: 243%;
+      text-shadow: 2px 2px 2px black;
+    }
+    #complex-outer #superpowers{
+      position: absolute;
+      right: 125%;
+      top: 3%;
+      font-size: x-large;
+    }
+    .complex-primary h4{
+      font-size: larger;
+      width: 150px;
+      padding-bottom: 5%;
+      color: #fff;
+    }
+    .complex-primary a{
+      display: block;
+      text-decoration: none;
+      position: relative;
+      top: 12px;
+      color: #fff;
+      width: 65%;
+    }
+    .complex-primary p{
+      display: grid;
+      grid-template-columns: 200px;
+      color: #fff;
+    }
+    .complex-primary #arrow-flix{
+      width: 30px;
+      margin-left: 6%;
+      animation: skull 3s ease infinite;
+    }
+    @keyframes skull{
+      from {margin-left: 6%;}
+      to {margin-left: 15%;}
+    }
+    .complex-secondary{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: absolute;
+      top: 244%;
+      left: 45%;
+      width: 47%;
+      height: 40%;
+    }
+    .complex-extend h3,.complex-extend-1 h3{
+      padding-bottom: 4%;
+      color: #130f40;
+    }
+    .complex-extend a,.complex-extend-1 a{
+      display: block;
+      text-decoration: none;
+      padding: 12px 0;
+      color: #ff7979;
+      text-shadow: 2px 2px 5px coral;
+    }
+    .complex-extend #arrow-extend,.complex-extend-1 #arrow-extend-1{
+      margin-left: 5%;
+      animation: myskull 3s ease infinite;
+      color: #ff7979;
+    }
+    @keyframes myskull{
+      from {margin-left: 6%;}
+      to {margin-left: 10%;}
+    }
+    .complex-extend p{
+      display: grid;
+      grid-template-columns: 200px;
+      color: #535c68;
+    }
+    .complex-extend-1 p{
+      display: grid;
+      grid-template-columns: 200px;
+      color: #535c68;
+    }
+    .complex-secondary #book{
+      font-size: 32px;
+      position: absolute;
+      right: 97%;
+      top: 3%;
+      color: #ff7979
+    }
+    .complex-secondary #window{
+      font-size: 32px;
+      position: absolute;
+      right: 47%;
+      top: 3%;
+      color: #ff7979;
+    }
+    .web-developer{
+      width: 40%;
+      height: 30%;
+      position: absolute;
+      top: 300%;
+      left: 30%;
+      text-align: center;
+    }
+    .web-developer p{
+      padding-top: 3%;
+      font-size: large;
+      color: #535c68;
+    }
+    .web-developer #trust{
+      color: #130f40;
+    }
+    .web-developer #web{
+      color: #c45623;
+    }
+    .last-items{
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      height: 6%;
+      justify-content: space-around;
+      position: relative;
+      bottom: 10%;
+      left: 15%;
+    }
+    .designer{
+      width: 96%;
+      height: 50%;
+      border-radius: 15px;
+      text-align: center;
+      margin: 5% 2%;
+      background: linear-gradient(310deg,#F5B542,#C43423);
+    }
+    #designer-inner{
+      position: relative;
+      top: 20%;
+    }
+    .designer h1{
+      color: #fff;
+    }
+    .designer p{
+      display: grid;
+      grid-template-columns: 540px;
+      width: 43%;
+      margin-left: 29%;
+      font-size: large;
+      color: #fff;
+    }
+    .designer button{
+      padding: 2px 1%;
+      border-radius: 10px;
+      border: none;
+      background: #130f40;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+    .premium-offer{
+      width: 67%;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      left: 17%;
+      top: 408%;
+      justify-content: space-around;
+      padding-top: 1.6%;
+      background: #FFFFFF;
+      border-radius: 15px;
+    }
+    .premium-offer ul li #logo{
+      margin-right: 4%;
+    }
+    .premium-offer ul{
+      list-style-type: none;
+    }
+    .premium-offer .number{
+      font-size: xx-large;
+      padding-bottom: 7%;
+      color: #130f40;
+    }
+    .premium-offer ul li{
+      padding-bottom: 4%;
+      width: 105%;
+    }
+    .premium-offer a button{
+      border-radius: 8px;
+      padding: 2% 30%;
+      position: relative;
+      top: 4%;
+      background: linear-gradient(to right,#272166,#130f40);
+      color: #fff;
+    }
+    .premium-offer .paragraph{
+      color: #535c68;
+    }
+    .finale-item #system{
+      color: #dd3939;
+    }
+    .final-items #social{
+      padding: 5% 2%;
+    }
+    .finale-item ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .finale-item ul li i{
+      font-size: 20px;
+    }
+    .final-items{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: 60%;
+      left: 14%;
+      width: 75%;
+      height: 24%;
+      justify-content: space-between;
+    }
+    .final-items ul{
+      list-style-type: none;
+    }
+    .final-items ul li{
+      font-size: 15px;
+      padding-bottom: 2%;
+      color: #535c68;
+    }
+    .final-items h5{
+      padding-bottom: 5%;
+      color: #ff7979;
+    }
+    .footer{
+      position: relative;
+      top: 65%;
+      text-align: center;
+      padding-bottom: 3%;
+      font-size: 15px;
+    }
+    .menu-bar{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 870%;
+      height: 1590%;
+      border-radius: 15px;
+      box-shadow: 1px 1px 5px black;
+      border: none;
+      z-index: 1;
+    }
+    .menu-bar .sub-menu{
+      width: 20%;
+      height: 35%;
+      position: relative;
+      left: 45px;
+      top: 35px;
+    }
+    .menu-bar .sub-menu li{
+      font-size: 15px;
+      position: relative;
+      top: 10px;
+      padding-top: 7%;
+      width: 100%;
+      color: #535c68;
+      border-radius: 7px;
+    }
+    .list-items li:hover > .menu-bar{
+      display: block;
+    }
+    .menu-bar .sub-menu-1{
+      width: 25%;
+      height: 27%;
+      position: relative;
+      left: 250px;
+      bottom: 123px;
+    }
+    .menu-bar .sub-menu-1 li{
+      display: block;
+      font-size: 15px;
+      padding-top: 7%;
+      position: relative;
+      top: 10px;
+      width: 90%;
+      color: #535c68;
+      border-radius: 7px;
+    }
+    .menu-bar .sub-menu-2{
+      width: 25%;
+      height: 45%;
+      position: relative;
+      bottom: 240px;
+      left: 490px;
+    }
+    .menu-bar .sub-menu-2 li{
+      display: block;
+      font-size: 15px;
+      padding-top: 7%;
+      position: relative;
+      top: 10px;
+      width: 90%;
+      color: #535c68;
+      border-radius: 7px;
+    }
+    .menu-bar .sub-menu-3{
+      width: fit-content;
+      height: 240px;
+      position: relative;
+      left: 47px;
+      bottom: 270px;
+    }
+    .menu-bar .sub-menu-3 li{
+      display: block;
+      font-size: 15px;
+      padding-top: 7%;
+      position: relative;
+      top: 10px;
+      width: 100%;
+      color: #535c68;
+      border-radius: 7px;
+    }
+    .menu-bar .sub-menu-4{
+      width: 25%;
+      height: 270px;
+      position: relative;
+      left: 250px;
+      bottom: 403px;
+    }
+    .menu-bar .sub-menu-4 li{
+      display: block;
+      font-size: 15px;
+      padding-top: 7%;
+      position: relative;
+      top: 10px;
+      width: 90%;
+      color: #535c68;
+      border-radius: 7px;
+    }
+    .menu-bar .sub-menu-5{
+      width: 25%;
+      height: 270px;
+      position: relative;
+      left: 490px;
+      bottom: 715px;
+    }
+    .menu-bar .sub-menu-5 li{
+      display: block;
+      font-size: 15px;
+      padding-top: 7%;
+      position: relative;
+      top: 10px;
+      width: 95%;
+      color: #535c68;
+      border-radius: 7px;
+    }
+    .sub-menu-5 button{
+      font-size: 12px;
+      border-radius: 5px;
+      padding: 1% 3%;
+      background: linear-gradient(to right,#272166,#130f40);
+      color: #fff;
+    }
+    .menu-bar h5{
+      margin-left: 3%;
+      color: #130f40;
+    }
+    .menu-bar a{
+      text-decoration: none;
+    }
+    .menu-bar li:hover{
+      background: #dcdde1;
+    }
+    .sub-menu i{
+      position: absolute;
+      right: 137px;
+      bottom: 125px;
+      font-size: x-large;
+      color: #C43423;
+      border-radius: 5px;
+    }
+    .sub-menu-1 i{
+      position: absolute;
+      right: 170px;
+      bottom: 90px;
+      font-size: x-large;
+      color: #C43423;
+      border-radius: 5px;
+    }
+    .sub-menu-2 i{
+      position: absolute;
+      right: 169px;
+      bottom: 170px;
+      font-size: x-large;
+      color: #C43423;
+      border-radius: 5px;
+    }
+    .sub-menu-3 i{
+      position: absolute;
+      right: 157px;
+      bottom: 210px;
+      font-size: x-large;
+      color: #C43423;
+      border-radius: 5px;
+    }
+    .sub-menu-4 i{
+      position: absolute;
+      right: 167px;
+      bottom: 240px;
+      font-size: x-large;
+      color: #C43423;
+      border-radius: 5px;
+    }
+    .sub-menu-5 i{
+      position: absolute;
+      right: 167px;
+      bottom: 240px;
+      font-size: x-large;
+      color: #C43423;
+      border-radius: 5px;
+    }
+    .menu-bar-1{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 400%;
+      height: 1150%;
+      border-radius: 15px;
+      box-shadow: 1px 1px 5px black;
+      border: none;
+      z-index: 1;
+    }
+    .list-items li:hover > .menu-bar-1{
+      display: block;
+    }
+    .Explore{
+      width: 49%;
+      height: 89%;
+      margin: 5% 4%;
+      border-radius: 15px;
+      background: linear-gradient(310deg,#F5B542,#C43423);
+    }
+    .Explore h3{
+      display: grid;
+      grid-template-columns: 130px;
+      justify-content: center;
+      position: relative;
+      top: 120px;
+      left: 10px;
+      color: #dff9fb;
+    }
+    .Explore i{
+      font-size: xx-large;
+      position: relative;
+      left: 70px;
+      top: 85px;
+      border-radius: 10px;
+    }
+    .side-bar{
+      display: grid;
+      grid: 6px;
+      width: 43%;
+      height: 70%;
+      position: absolute;
+      bottom: 40px;
+      left: 214px;
+    }
+    .side-bar li{
+      display: block;
+      border-radius: 5px;
+    }
+    .side-bar li:hover{
+      background: #dcdde1;
+    }
+    .side-bar a{
+      text-decoration: none;
+      color: #6F1E51;
+    }
+    #side-bar-inner{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 1px;
+      left: 180px;
+      width: 110%;
+      height: 410%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #side-bar-inner{
+      display: block;
+    }
+    .side-bar #side-bar-inner ul{
+      height: 100%;
+      border-radius: 15px;
+      position: relative;
+      top: 13%;
+    }
+    .list-items .side-bar #side-bar-inner ul li{
+      display: block;
+      height: 20%;
+      width: 90%;
+      padding: 1% 5%;
+      margin: 2% 5%;
+    }
+    #side-bar-outer{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 1px;
+      left: 180px;
+      width: 110%;
+      height: 410%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #side-bar-outer{
+      display: block;
+    }
+    #side-bar-outer ul{
+      height: 100%;
+      border-radius: 15px;
+      position: relative;
+      top: 13%;
+    }
+    .list-items #side-bar-outer ul li{
+      display: block;
+      height: 20%;
+      padding: 1% 5%;
+      margin: 2% 5%;;
+    }
+    #side-sub-bar-outer{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 1px;
+      left: 180px;
+      width: 110%;
+      height: 370%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #side-sub-bar-outer{
+      display: block;
+    }
+    #side-sub-bar-outer ul{
+      height: 150%;
+      border-radius: 15px;
+      position: relative;
+      top: 16px;
+    }
+    .list-items #side-sub-bar-outer ul li{
+      display: block;
+      height: 20%;
+      margin: 1% 5%;
+    }
+    .list-items #side-sub-bar-outer ul a{
+      display: block;
+      padding: 1%;
+    }
+    #side-sub-bar-outer-1{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 1px;
+      left: 180px;
+      width: 110%;
+      height: 300%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #side-sub-bar-outer-1{
+      display: block;
+    }
+    #side-sub-bar-outer-1 ul{
+      height: 150%;
+      border-radius: 15px;
+      position: relative;
+      top: 13%;
+    }
+    .list-items #side-sub-bar-outer-1 ul li{
+      display: block;
+      height: 20%;
+      padding: 1% 5%;
+      margin: 6% 5%;
+    }
+    .Block-bar{
+      display: none;
+      width: 375%;
+      height: 1200%;
+      position: relative;
+      top: -27px;
+      right: 6px;
+      border-radius: 15px;
+      border: none;
+    }
+    .list-items li:hover > .Block-bar{
+      display: block;
+    }
+    .Block-bar li{
+      display: block;
+      border-radius: 5px;
+      width: 90%;
+    }
+    .Block-bar li:hover{
+      background: #dcdde1;
+    }
+    .Block-bar a{
+      text-decoration: none;
+      color: #6F1E51;
+    }
+    #Block-bar-1{
+      background: white;
+      width: 450%;
+      height: 410%;
+      border-radius: 15px;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #Block-bar-1{
+      display: block;
+    }
+    .Block-bar #Block-bar-1{
+      height: 100%;
+      border-radius: 15px;
+      position: absolute;
+      top: 13%;
+    }
+    .list-items .Block-bar #Block-bar-1 li{
+      display: block;
+      height: 15%;
+      margin-top: 2%;
+      position: relative;
+      top: 15px;
+      left: 5%;
+      padding: 0 17%;
+      font-weight: bold;
+    }
+    .list-items .Block-bar #Block-bar-1 li span{
+      color: #7f8c8d;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .list-items .Block-bar #Block-bar-1 li i{
+      position: absolute;
+      right: 262px;
+      color: #C43423;
+    }
+    #Block-bar-inner{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 12px;
+      left: 315px;
+      width: 72%;
+      height: 900%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #Block-bar-inner{
+      display: block;
+    }
+    #Block-bar-inner ul{
+      height: 50%;
+      border-radius: 15px;
+      position: relative;
+      top: 4%;
+    }
+    .list-items #Block-bar-inner ul li{
+      display: block;
+      height: 20%;
+      padding: 1% 5%;
+      margin-top: 2%;
+    }
+    #Block-bar-inner-1{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 12px;
+      left: 315px;
+      width: 50%;
+      height: 320%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #Block-bar-inner-1{
+      display: block;
+    }
+    #Block-bar-inner-1 ul{
+      height: 150%;
+      border-radius: 15px;
+      position: relative;
+      top: 4%;
+    }
+    .list-items #Block-bar-inner-1 ul li{
+      display: block;
+      height: 20%;
+      padding: 1% 5%;
+      margin-top: 2%;
+    }
+    #Block-bar-inner-1 ul a{
+      display: block;
+      padding-top: 2%;
+    }
+    #Block-bar-inner-2{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 12px;
+      left: 315px;
+      width: 80.5%;
+      height: 370%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #Block-bar-inner-2{
+      display: block;
+    }
+    #Block-bar-inner-2 ul{
+      height: 110%;
+      border-radius: 15px;
+      position: relative;
+      top: 4%;
+    }
+    .list-items #Block-bar-inner-2 ul li{
+      display: block;
+      height: 20%;
+      padding: 1% 5%;
+      margin-top: 2%;
+    }
+    #Block-bar-inner-3{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 2px;
+      left: 315px;
+      width: 80%;
+      height: 370%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #Block-bar-inner-3{
+      display: block;
+    }
+    #Block-bar-inner-3 ul{
+      height: 110%;
+      border-radius: 15px;
+      position: relative;
+      top: 4px;
+    }
+    #Block-bar-inner-3 ul a{
+      display: block;
+      width: 100%;
+    }
+    #Block-bar-inner-4{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 2px;
+      left: 315px;
+      width: 72%;
+      height: 520%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #Block-bar-inner-4{
+      display: block;
+    }
+    #Block-bar-inner-4 ul{
+      height: 100%;
+      border-radius: 15px;
+      position: relative;
+      top: 3px;
+    }
+    #Block-bar-inner-4 ul a{
+      display: block;
+      padding-top: 2%;
+    }
+    #side-sub-navbar{
+      display: none;
+      background: white;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 550%;
+      height: 1510%;
+      border-radius: 15px;
+      border: none;
+      z-index: 1;
+      box-shadow: 1px 1px 5px black;
+    }
+    .list-items li:hover > #side-sub-navbar{
+      display: block;
+    }
+    #side-sub-navbar ul{
+      height: 50%;
+      border-radius: 15px;
+      position: relative;
+      top: 4%;
+    }
+    .list-items #side-sub-navbar ul li{
+      display: block;
+      height: 20%;
+      padding: 1% 13%;
+      width: 95.5%;
+      position: relative;
+      left: 9.5px;
+      top: 0;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #6F1E51;
+    }
+    .list-items #side-sub-navbar ul li:hover{
+      background: #dcdde1;
+    }
+    .list-items #side-sub-navbar ul a{
+      display: block;
+      text-decoration: none;
+    }
+    .list-items #side-sub-navbar ul li span{
+      font-size: 14px;
+      font-weight: normal;
+    }
+    @media screen and (max-width:375px){
+      .list-items{
+        display: none;
+      }
+      #soft-pro{
+        position: relative;
+        top: 11px;
+      }
+      .buy-now{
+        width: 35%;
+        position: absolute;
+        left: 42%;
+        bottom: 28%;
+        border-radius: 20px;
+        padding: 4px 16px;
+      }
+      #bars{
+        position: relative;
+        left: 165px;
+        top: 17px;
+        font-size: 30px;
+      }
+      .primary h1{
+        display: grid;
+        grid-template-columns: 220px;
+        font-size: 30px;
+        width: 65%;
+        margin-left: 18%;
+      }
+      .primary p{
+        display: grid;
+        grid-template-columns: 320px;
+        font-size: 18px;
+        position: relative;
+        left: 23px;
+      }
+      .secondary{
+        width: 92%;
+        height: 110%;
+        position: relative;
+        right: 63px;
+      }
+      .list-box1{
+        display: block;
+        position: relative;
+        left: 110px;
+        top: 30px;
+      }
+      .secondary #plus-1,#plus-2{
+        margin-top: 15%;
+      }
+      .secondary i{
+        margin: 0 100%;
+        position: relative;
+        top: -70px;
+      }
+      .secondary .list-box2{
+        display: grid;
+        grid-template-columns: 611px;
+        align-content: space-evenly;
+        height: 100%;
+        position: relative;
+        bottom: 270px;
+        padding-left: 112%;
+        letter-spacing: 3px;
+      }
+      .secondary .list-box2 #Design-1{
+        margin-bottom: 20%;
+      }
+      .secondary .list-box2 #Design-2{
+        position: relative;
+        top: -60px;
+      }
+      .secondary .list-box2 #Design-3{
+        position: relative;
+        right: 10px;
+      }
+      .secondary .list-box3{
+        position: absolute;
+        bottom: 17px;
+        right: 30px;
+        width: 100%;
+        height: 100%;
+      }
+      .secondary .list-box3 #p-1 p{
+        width: 95%;
+        text-align: center;
+        position: relative;
+        top: 145px;
+        left: 38px;
+      }
+      .secondary .list-box3 #p-2 p{
+        width: 95%;
+        text-align: center;
+        position: relative;
+        top: 145px;
+        left: 38px;
+      }
+      .secondary .list-box3 #p-3 p{
+        width: 95%;
+        text-align: center;
+        position: relative;
+        top: 135px;
+        left: 38px;
+      }
+      .Bootstrap{
+        display: block;
+        width: 93%;
+        height: 100%;
+        position: relative;
+        top: 540px;
+        right: 45px;
+      }
+      .Bootstrap-1{
+        position: relative;
+        top: 45px;
+      }
+      .Bootstrap-1 p{
+        width: 80%;
+      }
+      .Bootstrap i{
+        position: relative;
+        top: 20px;
+      }
+      .Bootstrap-2{
+        position: relative;
+        top: 105px;
+      }
+      .Bootstrap-2 p{
+        width: 82%;
+      }
+      .Bootstrap #home{
+        position: relative;
+        top: 220px;
+        margin-left: -38%;
+      }
+      .Bootstrap-3{
+        position: relative;
+        top: 98px;
+      }
+      .Bootstrap-3 p{
+        width: 80%;
+      }
+      .Bootstrap #clock{
+        margin-top: -207%;
+      }
+      .Bootstrap-4{
+        width: 100%;
+        position: relative;
+        top: 90px;
+      }
+      .Bootstrap-4 p{
+        width: 80%;
+      }
+      .Bootstrap #sitemap{
+        margin: -147% -37%;
+      }
+      .animated-box{
+        width: 92%;
+        height: 55%;
+        position: relative;
+        top: 510px;
+        left: 15px;
+      }
+      .animated-box img{
+        width: 39px;
+      }
+      .animated-box h2{
+        font-size: 23px;
+      }
+      .complex{
+        margin: 265% -7%;
+        width: 92%;
+        height: 57%;
+      }
+      .complex p{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 260px;
+      }
+      .complex-primary{
+        width: 93%;
+        height: 45%;
+        position: relative;
+        top: 960px;
+        right: 27px;
+      }
+      #complex-outer{
+        position: relative;
+        top: 70px;
+        left: 115px;
+      }
+      .complex-secondary{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 93%;
+        height: 85%;
+        position: relative;
+        top: 870px;
+        left: 13px;
+      }
+      .complex-extend{
+        position: relative;
+        left: 100px;
+      }
+      .complex-secondary #book{
+        margin: 5% -15%;
+      }
+      .complex-secondary p{
+        width: 45%;
+        display: grid;
+        grid-template-columns: 170px;
+      }
+      .complex-extend-1{
+        position: relative;
+        left: 100px;
+      }
+      .complex-secondary #window{
+        margin: -1% 62%;
+      }
+      .web-developer{
+        width: 90%;
+        height: 40%;
+        position: relative;
+        top: 965px;
+        left: 13px;
+      }
+      .last-items{
+        position: relative;
+        top: 1060px;
+        left: 13px;
+        width: 93%;
+        height: 20%;
+      }
+      .last-items img{
+        width: 36%;
+        height: 25%;
+      }
+      .last-items #nasa{
+        width: 30%;
+        height: 15%;
+      }
+      .designer{
+        position: relative;
+        top: 1120px;
+      }
+      .designer h1{
+        display: grid;
+        grid-template-columns: 240px;
+        font-size: x-large;
+        padding-left: 60px;
+      }
+      .designer p{
+        display: grid;
+        grid-template-columns: 330px;
+        margin-left: 10px;
+      }
+      .premium-offer{
+        width: 92%;
+        height: 180%;
+        position: relative;
+        top: 1040px;
+        left: 16px;
+        border-radius: 20px;
+      }
+      .final-items{
+        width: 85%;
+        height: 62%;
+        position: relative;
+        top: 1100px;
+        left: 20px;
+      }
+      .finale-item{
+        width: 67%;
+      }
+      .finale-item ul{
+        width: 75%;
+      }
+      .final-items #resources{
+        position: relative;
+        right: 20px;
+      }
+      .final-items #resize{
+        width: 90%;
+      }
+      .footer{
+        width: 80%;
+        position: relative;
+        top: 1100px;
+        left: 33px;
+        font-size: small;
+      }
+    }
+    @media screen and (max-width:768px){
+      .navbar{
+        height: 8.4%;
+      }
+      .list-items{
+        display: none;
+      }
+      .buy-now{
+        width: 21%;
+        margin-left: -21%;
+        padding: 1.1% 0;
+      }
+      #bars{
+        position: relative;
+        left: 474px;
+        top: 13px;
+        font-size: xx-large;
+      }
+      .primary{
+        position: relative;
+        top: 130px;
+      }
+      .secondary{
+        margin: 40% 3%;
+        width: 93%;
+        height: 44%;
+        border: 1px solid black;
+      }
+      .Bootstrap{
+        border: 1px solid black;
+        width: 93%;
+        height: 52%;
+        position: relative;
+        top: 220px;
+        left: -95px;
+        padding-top: 55px;
+      }
+      .Bootstrap-1 p{
+        width: 76%;
+      }
+      .Bootstrap-1{
+        width: 50%;
+      }
+      .Bootstrap-2{
+        width: 50%;
+      }
+      .Bootstrap-2 p{
+        width: 90%;
+      }
+      .Bootstrap-4{
+        width: 45%;
+      }
+      .Bootstrap-4 p{
+        width: 90%;
+      }
+      .Bootstrap i{
+        position: relative;
+        top: 10px;
+      }
+      .Bootstrap #home{
+        margin-left: 12%;
+      }
+      .Bootstrap #clock{
+        margin-top: -60%;
+      }
+      .Bootstrap #sitemap{
+        margin: -60% 12%;
+      }
+      .animated-box{
+        width: 92%;
+        height: 43.7%;
+        margin: 70% -61%;
+        z-index: 1;
+      }
+      .animated-box i{
+        width: 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="contain">
+      <nav class="navbar">
+        <a href="" id="soft-pro">Soft UI PRO</a>
+        <ul class="list-items">
+          <li>Pages <i class="fa fa-caret-down"></i>
+            <div class="menu-bar">
+              <ul class="sub-menu">
+                <h5><i class="fa fa-file-text"></i>Landing Pages</h5>
+                <a href=""><li>Coworking</li></a>
+                <a href=""><li>Rental</li></a>
+                <a href=""><li>Case Study</li></a>
+              </ul>
+              <ul class="sub-menu-1">
+                <h5><i class="fa fa-user-circle"></i>Support</h5>
+                <a href=""><li>Help Center</li></a>
+                <a href=""><li>Help Center Basic</li></a>
+                <a href=""><li>Contact Us</li></a>
+                <a href=""><li>Contact Us Basic</li></a>
+                <a href=""><li>FAQ</li></a>
+                <a href=""><li>Privacy</li></a>
+              </ul>
+            <ul class="sub-menu-2">
+              <h5><i class="fa fa-rss-square"></i>Blogs</h5>
+              <a href=""><li>Single Article</li></a>
+              <a href=""><li>Blog Posts</li></a>
+              <a href=""><li>Categories</li></a>
+              <a href=""><li>Author</li></a>
+            </ul>
+            <ul class="sub-menu-3">
+              <h5><i class="fa fa-bar-chart"></i>Company</h5>
+              <a href=""><li>About Us</li></a>
+              <a href=""><li>Pricing</li></a>
+              <a href=""><li>Career</li></a>
+              <a href=""><li>Work with Us</li></a>
+              <a href=""><li>Terms & Conditions</li></a>
+            </ul>
+            <ul class="sub-menu-4">
+              <h5><i class="fa fa-cube"></i>Apps</h5>
+              <a href=""><li>Mobile App</li></a>
+                <a href=""><li>Desktop App</li></a>
+            </ul>
+            <ul class="sub-menu-5">
+              <h5><i class="fa fa-rocket"></i>Extra</h5>
+              <a href=""><li>Automotive</li></a>
+              <a href=""><li>VR <button type="button">SOON</button></li></a>
+              <a href=""><li>Smart Home <button type="button">SOON</button></li></a>
+            </ul>
+          </div>
+          </li>
+          <li>Account <i class="fa fa-caret-down"></i>
+          <div class="menu-bar-1">
+            <div class="Explore">
+              <i class="fa fa-diamond"></i>
+              <h3>Explore Our Utilities Page</h3>
+            </div>
+            <ul class="side-bar">
+              <a href=""><li>Sign In<i class="fa fa-angle-right" style="padding-left: 49%;"></i>
+                <div id="side-bar-inner">
+                  <ul>
+                    <a href=""><li>Side Cover</li></a>
+                    <a href=""><li>illustration</li></a>
+                    <a href=""><li>Basic</li></a>
+                    <a href=""><li>Simple</li></a>
+              </ul>
+            </div>
+              </li></a>
+              <a href=""><li>Sign Up<i class="fa fa-angle-right" style="padding-left: 45%;"></i>
+                <div id="side-bar-outer">
+                  <ul>
+                    <a href=""><li>Side Cover</li></a>
+                    <a href=""><li>illustration</li></a>
+                    <a href=""><li>Basic</li></a>
+                    <a href=""><li>Simple</li></a>
+                  </ul>
+                </div>
+              </li></a>
+              <a href=""><li>Password Reset<i class="fa fa-angle-right" style="padding-left: 6%;"></i>
+                <div id="side-sub-bar-outer">
+                  <ul>
+                    <a href=""><li>Side Cover</li></a>
+                    <a href=""><li>illustration</li></a>
+                    <a href=""><li>Basic</li></a>
+                  </ul>
+                </div>
+              </li></a>
+              <a href=""><li>Error Pages<i class="fa fa-angle-right" style="padding-left: 26%;"></i>
+                <div id="side-sub-bar-outer-1">
+                  <ul>
+                    <a href=""><li>404</li></a>
+                    <a href=""><li>500</li></a>
+                  </ul>
+                </div>
+              </li></a>
+              <a href=""><li>Coming Soon</li></a>
+              <a href=""><li>2FA Security</li></a>
+            </ul>
+          </div>
+          </li>
+          <li>Blocks <i class="fa fa-caret-down"></i>
+            <div class="Block-bar">
+              <ul id="Block-bar-1">
+                <a href=""><li><i class="fa fa-book"></i>Page Sections<br/><span>See all 109 Sections</span><i class="fa fa-angle-right" style="position: relative;left: 70px;bottom: 20px;color: black;"></i>
+                  <div id="Block-bar-inner">
+                    <ul>
+                      <a href=""><li>Page Headers</li></a>
+                      <a href=""><li>Features</li></a>
+                      <a href=""><li>Pricing</li></a>
+                      <a href=""><li>FAQ</li></a>
+                      <a href=""><li>Blog Posts</li></a>
+                      <a href=""><li>Testimonials</li></a>
+                      <a href=""><li>Teams</li></a>
+                      <a href=""><li>Stats</li></a>
+                      <a href=""><li>Call to Actions</li></a>
+                      <a href=""><li>Applications</li></a>
+                </ul>
+              </div>
+                </li></a>
+                <a href=""><li><i class="fa fa-laptop"></i>Navigation<br/><span>See all 9 Navigation</span><i class="fa fa-angle-right" style="position: relative;left: 68px;bottom: 20px;color: black;"></i>
+                  <div id="Block-bar-inner-1">
+                    <ul>
+                      <a href=""><li>Navbars</li></a>
+                      <a href=""><li>Nav Tabs</li></a>
+                      <a href=""><li>Pagination</li></a>
+                    </ul>
+                  </div>
+                </li></a>
+                <a href=""><li><i class="fa fa-id-card"></i>Input Areas<br/><span>See all 19 Input Areas</span><i class="fa fa-angle-right" style="position: relative;left: 221px;bottom: 45px;color: black;"></i>
+                  <div id="Block-bar-inner-2">
+                    <ul>
+                      <a href=""><li>Newsletter</li></a>
+                      <a href=""><li>Contact Sections</li></a>
+                      <a href=""><li>Inputs</li></a>
+                      <a href=""><li>Forms</li></a>
+                    </ul>
+                  </div>
+                </li></a>
+                <a href=""><li><i class="fa fa-bullhorn"></i>Attention Catchers<br/><span>See all 14 Examples</span><i class="fa fa-angle-right" style="position: relative;left: 67px;bottom: 20px;color: black;"></i>
+                  <div id="Block-bar-inner-3">
+                    <ul>
+                      <a href=""><li>Alerts</li></a>
+                      <a href=""><li>Notifications</li></a>
+                      <a href=""><li>Modals</li></a>
+                      <a href=""><li>Toolstips & Popovers</li></a>
+                    </ul>
+                  </div>
+                </li></a>
+                <a href=""><li><i class="fa fa-cube"></i>Elements<br/><span>See all 32 Elements</span><i class="fa fa-angle-right" style="position: relative;left: 71px;bottom: 20px;color: black;"></i>
+                  <div id="Block-bar-inner-4">
+                    <ul>
+                      <a href=""><li>Avatars</li></a>
+                      <a href=""><li>Badges</li></a>
+                      <a href=""><li>Breadcrumbs</li></a>
+                      <a href=""><li>Buttons</li></a>
+                      <a href=""><li>Button Groups</li></a>
+                      <a href=""><li>Dropdowns</li></a>
+                    </ul>
+                  </div>
+                </li></a>
+          </ul>
+        </div>
+          </li>
+          <li>Docs <i class="fa fa-caret-down"></i>
+            <div id="side-sub-navbar">
+              <ul>
+                <a href=""><li><i class="fa fa-rocket" style="position: absolute;right: 330px;top: 5px;color: #C43423;"></i>Getting Started<br/><span>All about overview,quick start,license and contents</span></li></a>
+                <a href=""><li><i class="fa fa-book" style="position: absolute;right: 330px;top: 5px;color: #C43423;"></i>Foundation<br/><span>See our colors,icons and typography</span></li></a>
+                <a href=""><li><i class="fa fa-cube" style="position: absolute;right: 330px;top: 5px;color: #C43423;"></i>Components<br/><span>Explore our collection of fully designed components</span></li></a>
+                <a href=""><li><i class="fa fa-cubes" style="position: absolute;right: 330px;top: 5px;color: #C43423;"></i>Plugins<br/><span>Check how you can integrate our plugins</span></li></a>
+                <a href=""><li><i class="fa fa-cogs" style="position: absolute;right: 330px;top: 5px;color: #C43423;"></i>Utility Classes<br/><span>For those who want flexibility, use our utility classes</span></li></a>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button class="buy-now">BUY NOW</button>
+        <i id="bars" class="fa fa-bars"></i>
+      </nav>
+      <div class="primary">
+        <h1>Soft UI Design System Pro</h1>
+        <p>Simple and innovative Web UI Kit built on top of Bootstrap 5.</p>
+        <p>Join over 1.4 million developers around the world.</p>
+      </div>
+      <div class="secondary">
+        <ul class="list-box1">
+          <li>300<i class="fa fa-plus"></i></li>
+          <li id="plus-1">100<i class="fa fa-plus"></i></li>
+          <li id="plus-2">39</li>
+        </ul>
+        <ul class="list-box2">
+          <li id="Design-1">Coded Elements</li>
+          <li id="Design-2">Design Blocks</li>
+          <li id="Design-3">Pages</li>
+        </ul>
+        <ul class="list-box3">
+          <li id="p-1"><p>From buttons, to inputs, navbars, alerts or cards, you are covered</p></li>
+          <li id="p-2"><p>Mix the sections, change the colors and unleash your creativity</p></li>
+          <li id="p-3"><p>Save 3-4 weeks of work when you use our pre-made pages for your website</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="Bootstrap">
+      <i class="fa fa-book" style="position:absolute;bottom:1px;font-size: xx-large;color:#C43423;"></i>
+      <div class="Bootstrap-1">
+        <h3>Full Documentation</h3>
+        <p>Built by developers for developers. Check the foundation and you will find everything inside our documentation.</p>
+      </div>
+      <i id="home" class="fa fa-home" style="position:absolute;bottom:1px;left:37.5%;font-size: xx-large;color:#C43423;"></i>
+      <div class="Bootstrap-2">
+        <h3>Bootstrap 5 Ready</h3>
+        <p>The world’s most popular front-end open source toolkit, featuring Sass variables and mixins.</p>
+      </div>
+      <i id="clock" class="fa fa-clock-o" style="position:absolute;top:138%;font-size: xx-large;color:#C43423;"></i>
+      <div class="Bootstrap-3">
+        <h3>Save Time & Money</h3>
+        <p>Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System.</p>
+      </div>
+      <i id="sitemap" class="fa fa-sitemap" style="position:absolute;top:138%;left:37.5%;font-size: xx-large;color:#C43423;"></i>
+      <div class="Bootstrap-4">
+        <h3>Fully Responsive</h3>
+        <p>Regardless of the screen size, the website content will naturally fit the given resolution.</p>
+      </div>
+    </div>
+    <div class="animated-box">
+      <div class="card">
+        <i class="fa fa-cube"></i>
+        <h2>Feel the Soft UI Design System</h2>
+        <a href="https://demos.creative-tim.com/marketplace/soft-ui-design-system-pro//sections/page-sections/hero-sections.html" target="blank_"><button type="button">START WITH HEADERS</button></a>
+      </div>
+    </div>
+    <div class="complex">
+      <div id="complex-inner">
+        <h3>Built by developers</h3>
+        <h1>Complex Documentation</h1>
+        <p>From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components.</p>
+        <a href="https://themes.getbootstrap.com/preview/?theme_id=90106" target="blank_">Read Docs<i id="arrow" class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="complex-primary">
+      <div id="complex-outer">
+        <i id="superpowers" class="fa fa-superpowers"></i>
+        <h4>Getting Started</h4>
+        <p>Check the possible ways of working with our product and the necessary files for building your own project.</p>
+        <a href="https://themes.getbootstrap.com/preview/?theme_id=90106" target="blank_">Let's start<i id="arrow-flix" class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="complex-secondary">
+      <i id="book" class="fa fa-book"></i>
+      <div class="complex-extend">
+        <h3>Plugins</h3>
+        <p>Get inspiration and have an overview about the plugins that we used to create the Soft UI Design System.</p>
+        <a href="" target="blank_">Read More<i id="arrow-extend" class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="complex-extend-1">
+        <i id="window" class="fa fa-window-restore"></i>
+        <h3>Utility Classes</h3>
+        <p>Soft UI Design System is giving you a lot of pre-made elements. For those who want flexibility, we included many utility classes.</p>
+        <a href="" target="blank_">Read More<i id="arrow-extend-1" class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="web-developer">
+      <h1 id="trust" >Trusted by over</h1>
+      <h1 id="web">1,435,000 web developers</h1>
+      <p>Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products.</p>
+    </div>
+    <div class="last-items">
+      <img src="../payments/Apple.png" alt="Apple" width="8%">
+      <img src="../payments/facebook.png" alt="facebook" width="10%">
+      <img id="nasa" src="../payments/NASA.png" alt="NASA" width="6%">
+      <img src="../payments/vodafone.png" alt="vodafone" width="13%">
+      <img src="../payments/digitalocean.jpg" alt="digitalocean" width="14%">
+    </div>
+    <div class="designer">
+      <div id="designer-inner">
+        <button type="button">PRICING</button>
+        <h1>Ready to get Soft UI Design System?</h1>
+        <p>Based on the license you get, you will have direct access to our team of developers who built the product.</p>
+      </div>
+    </div>
+    <div class="premium-offer">
+      <div id="normal-plan">
+        <p class="paragraph">Standard</p>
+        <p class="number">$79</p>
+        <ul>
+          <li><i id="logo" class="fa fa-check"></i>Documentation</li>
+          <li><i id="logo" class="fa fa-check"></i>Fully Coded</li>
+          <li><i id="logo" class="fa fa-check"></i>Designer Files</li>
+          <li><i id="logo" class="fa fa-check"></i>Lifetime Access</li>
+          <li><i id="logo" class="fa fa-check"></i>1 Project</li>
+          <li><i id="logo" class="fa fa-check"></i>1 Developer</li>
+          <li><i id="logo" class="fa fa-check"></i>6 Months Tech Support</li>
+          <li><i id="logo" class="fa fa-check"></i>6 Months Free Updates</li>
+        </ul>
+        <a href="" target="blank_"><button type="button">BUY NOW</button></a>
+      </div>
+      <div id="premium-plan">
+        <p class="paragraph">Multisites</p>
+        <p class="number">$149</p>
+        <ul>
+          <li><i id="logo" class="fa fa-check"></i>Documentation</li>
+          <li><i id="logo" class="fa fa-check"></i>Fully Coded</li>
+          <li><i id="logo" class="fa fa-check"></i>Designer Files</li>
+          <li><i id="logo" class="fa fa-check"></i>Lifetime Access</li>
+          <li><i id="logo" class="fa fa-check"></i>Unlimited Project</li>
+          <li><i id="logo" class="fa fa-check"></i>Up to 10 Developer</li>
+          <li><i id="logo" class="fa fa-check"></i>12 Months Tech Support</li>
+          <li><i id="logo" class="fa fa-check"></i>12 Months Free Updates</li>
+        </ul>
+        <a href="" target="blank_"><button type="button">BUY NOW</button></a>
+      </div>
+      <div id="vip-plan">
+        <p class="paragraph">Extended</p>
+        <p class="number">$449</p>
+        <ul>
+          <li><i id="logo" class="fa fa-check"></i>Documentation</li>
+          <li><i id="logo" class="fa fa-check"></i>Fully Coded</li>
+          <li><i id="logo" class="fa fa-check"></i>Designer Files</li>
+          <li><i id="logo" class="fa fa-check"></i>Lifetime Access</li>
+          <li><i id="logo" class="fa fa-check"></i>Unlimited Project</li>
+          <li><i id="logo" class="fa fa-check"></i>More than 10 Developer</li>
+          <li><i id="logo" class="fa fa-check"></i>18 Months Tech Support</li>
+          <li><i id="logo" class="fa fa-check"></i>18 Months Free Updates</li>
+        </ul>
+        <a href="" target="blank_"><button type="button">BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="final-items">
+      <div class="finale-item">
+        <p id="system">Soft UI Design System</p>
+        <p id="social">Social</p>
+        <ul>
+          <li><i class="fa fa-facebook-square"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-globe"></i></li>
+          <li><i class="fa fa-headphones"></i></li>
+          <li><i class="fa fa-youtube-play"></i></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li>About Us</li>
+          <li>Freebies</li>
+          <li>Premium Tools</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div id="resources">
+        <h5>Resources</h5>
+        <ul>
+          <li>illustrations</li>
+          <li>Bits & Snippets</li>
+          <li>Affiliate Program</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Help & Support</h5>
+        <ul id="resize">
+          <li>Contact Us</li>
+          <li>Knowledge Center</li>
+          <li>Custom Development</li>
+          <li>Sponsorships</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>license (EULA)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <p>All rights reserved. Copyright © 2021 Soft UI Design System by Creative Tim.</p>
+    </div>
+  </div>
+</body>
+</html>
